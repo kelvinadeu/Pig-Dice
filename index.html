@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <link href="css/bootstrap.css" rel="stylesheet" type="bootstrap/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
@@ -10,18 +11,35 @@
 </head>
 
 <body>
-<div class="container">
-  <nav>
-    <ul>
-      <li>Game Rules</li>
-    </ul>
-  </nav>
-<div id="form">
-<input type="text" name="player 1" value="name:">
-<input type="text" name="player 2" value="name:">
+  <div class="container">
+    <div class="rules">
+      <button type="button" name="Game Rules" id="Rules">Game Rules</button>
+    </div>
+    <div id="form">
+      <input type="text" name="player 1" value="name:">
+      <input type="text" name="player 2" value="name:">
 
-</div>
-</div>
+      <button type="button" name="submit" id="dice">submit</button>
+      <button type="button" name="reset" id="cotain">reset</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="jumbotron">
+        <p>player 1</p>
+
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="jumbotron">
+        <p>player 2</p>
+
+      </div>
+    </div>
+  </div>
+  </div>
 </body>
 
 </html>
