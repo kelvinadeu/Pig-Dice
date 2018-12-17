@@ -9,11 +9,11 @@ function add() {
   if (txtNewPlayer.value == "")
     return;
 
-  var player = new object();
-  player.name = txtNewPlayer.value;
-  player.totalScore = 0;
-  player.currentScore = 0;
-  numPlayers++;
+  //var player = new player();
+  //player.name = txtNewPlayer.value;
+  //player.totalScore = 0;
+//  player.currentScore = 0;
+//  numPlayers++;
   //players[numPlayers];
   txtNewPlayer.value = "";
 }
