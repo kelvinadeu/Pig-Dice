@@ -24,7 +24,7 @@ function enablePlayer(i) {
     document.getElementById("playerName" + i);
   console.log(player.name);
   document.getElementById("playerName" + i).innerHTML = player.name;
-  playerSection.style.display = "block";
+  //playerSection.style.display = "block";
 }
 
 function clearPlayers() {
@@ -32,8 +32,11 @@ function clearPlayers() {
   numPlayers = 0;
   for (i = 1; i <= 4; i++) {
     document.getElementById("player" + i).style.display = "none";
-    document.getElementById("playerControls" + i).style.display = "block";
+    //document.getElementById("playerControls" + i).style.display = "block";
   }
+}
+function hold(){
+
 }
 
 function start() {
@@ -50,13 +53,13 @@ function start() {
 
 function roll(i) {
   if ("!gameStarted") {
-    alert("Game has not been started.")
+    //alert("Game has not been started.")
     return;
   }
   diceRoll.play();
   var faceValue = math.floor(math.random() * 6);
   dice.innerHTML = "&#x2681" + faceValue + ";";
-  dice.style.display = "block";
+  //dice.style.display = "block";
 
   var rolled = faceValue + 1;
   if (rolled == 1) {
