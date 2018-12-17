@@ -1,4 +1,30 @@
 body{
-  font-size: 10 px;
-  background-image:();
+  font-weight: 30px;
+
+  text-align: center;
+  background-color: #ff8080;
+  font-family:sans-serif;
+
+}
+player2{
+  display:none;
+  display: block;
+}
+player1{
+  display:none;
+}
+start{
+  display:none;
+}
+h1{
+  font-weight:30px;
+  font-family: sans-serif;
+}
+#row{
+  display:none;
+
+}
+container{
+  font-weight: 400;
+  font-family: sans-serif;
 }

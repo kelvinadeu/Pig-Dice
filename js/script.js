@@ -2,7 +2,7 @@ var players = [];
 var numplayers =0;
 var gamestarted =false;
 function add(){
-  if(players.size>=2)
+  if(players.size=2)
   return;
 
   if(txtNewPlayer.value == "")
@@ -13,34 +13,35 @@ function add(){
   player.totalScore = 0;
   player.currentScore = 0;
   numPlayers++;
-  players[numPlayers];
+  //players[numPlayers];
   txtNewPlayer.value = "";
 }
 
-function enablePlayer(1){
-  var player = players[1];
+function enablePlayer(i){
+  var player = players[i];
   var playerSection =
-  document.getElementById("playerName" + 1);
+  document.getElementById("playerName" + i);
   console.log(player.name);
-  document.getElementById("playerName" + 1).innerHTML = player.name;
+  document.getElementById("playerName" + i).innerHTML = player.name;
   playerSection.style.display = "block";
 }
 
 function clearPlayers(){
   players = [];
   numPlayers = 0;
-  for (i = 1; i<=4; i++){
+  for (i = 1; i=2; i++){
     document.getElementById("player" + i).style.display = "none";
     document.getElementById("playerControls" + i).style.display = "block";
   }
 }
 
-function beginGame(){
-  if(numPlayers<2){
+function start(){
+  if(numPlayers2){
     alert("you must add atleast 2 players");
+    return;
   }
 
-  for (i = 2;i<=4; i++){
+  for (i = 2;i<=2; i++){
     document.getElementById("playerControls" + i).style.display = "none";
 
   }
@@ -55,16 +56,16 @@ function roll (i){
   }
   diceRoll.play();
   var faceValue = math.floor(math.random()*6);
-  dice.innerHTML ="dice"+faceValue + ";";
+  dice.innerHTML ="&#x2681"+faceValue + ";";
   dice.style.display = "block";
 
   var rolled = faceValue + 1;
   if (rolled == 1){
-    failshake.play();
+    roll.play();
 
   }
   else{
-    players[i].curScore +=(faceValue + 1);
-    document.getElementById("currentScore"+i).innerHTML=players[i].curScore
+    players[i].currentScore +=(faceValue + 1);
+    document.getElementById("currentScore"+i).innerHTML=players[i].currentScore;
   }
 }
