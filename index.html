@@ -11,54 +11,62 @@
 </head>
 
 <body>
+  <h1>lets play pig dice</h1>
   <div class="container">
-    <div class="rules">
-      <button type="button" name="Game Rules" id="Rules">Game Rules</button>
-    </div>
-    <div id="form">
-      <input type="text" name="player 1" value="name:">
-      <input type="text" name="player 2" value="name:">
+    <div class="row">
 
-      <button type="button" name="submit" id="dice">submit</button>
-      <button type="button" name="reset" id="cotain">reset</button>
-    </div>
-  </div>
-  <h1>lets play pig dice.</h1>
-  <div class="row">
-    <div class="col-md-6">
-      <div class="jumbotron">
-        <p>player 1</p>
-        <div class="row">
-          <div class="col-md-3">
-            <button type="button" name="roll" id="roll1">roll</button>
-            <button type="button" name="hold" id="hold1">hold</button>
+      <h2>player details</h2>
+      <input id="txtNewPlayer" type="text">
 
-             <p id="score1">total score</p>
-          </div>
+      <button class="button" onclick="add()">Add</button>
+      <button class="button" onclick="reset()">Reset</button>
+      <div id="row">
 
-        </div>
-
+        <button class="button" onclick="start()">start</button>
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-md-6">
-      <div class="jumbotron">
-        <p>player 2</p>
-        <div class="row">
-          <div class="col-md-3">
-            <button type="button" name="roll" id="roll2">roll</button>
-            <button type="button" name="hold" id="hold2">hold</button>
+  <div class="jumbotron">
+    <div class="row">
+      <div class="col-md-3">
+
+        <div class="player" id="player1">
+          <div id="playerName1" class="playerName"></div>
+          <div class="score">
+            <span class="lblTotal">Total</span>
+            <div id="totalScore">0</div>
+            <div id="playerControls1">
+              <div id="currentScore1" class="currentScore">0</div>
+
+              <button class="button playButton" onclick="roll(1)">Roll</button>
+              <button class="button playButton" onclick="hold(1)">hold</button>
+
 
             </div>
 
           </div>
-
         </div>
+        <div class="player" id="player2">
+          <div id="playerName2" class="playerName"></div>
+          <div class="score">
+            <span class="lblTotal">Total</span>
+            <div id="totalScore">0</div>
 
+            <div id="playerControls2">
+              <div id="currentScore2" class="currentScore">0</div>
+
+              <button class="button playButton" onclick="roll(2)">Roll</button>
+              <button class="button playButton" onclick="hold(2)">Hold</button>
+            </div>
+          </div>
+          <div id="diceshake">
+            x2682;
+          </div>
+        </div>
       </div>
+
     </div>
-  </div>
+
   </div>
 </body>
 
