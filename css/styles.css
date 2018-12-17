@@ -20,11 +20,14 @@ h1{
   font-weight:30px;
   font-family: sans-serif;
 }
-#row{
-  display:none;
-
+button{
+  background-color: #a6ff4d;
 }
 container{
   font-weight: 400;
   font-family: sans-serif;
+  display: block;
+  text-align: center;
+  background-color: blue;
+  flex:1.2;
 }
