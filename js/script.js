@@ -1,24 +1,28 @@
-function add (){
-  if (players.size >=4)
+var players = [];
+var numplayers =0;
+var gamestarted =false;
+function add(){
+  if(players.size>=2)
   return;
 
-  if (txtNewPlayer.value == "")
+  if(txtNewPlayer.value == "")
   return;
 
   var player = new object();
   player.name = txtNewPlayer.value;
   player.totalScore = 0;
-  player.curScore = 0;
+  player.currentScore = 0;
   numPlayers++;
-  players[numPlayers] = player;
-  enablePlayer(numPlayers);
+  players[numPlayers];
   txtNewPlayer.value = "";
 }
 
-function enablePlayer(i){
-  var player = players[i];
+function enablePlayer(1){
+  var player = players[1];
   var playerSection =
-  document.getElementById("playerName" + i).innerHTML = player.name;
+  document.getElementById("playerName" + 1);
+  console.log(player.name);
+  document.getElementById("playerName" + 1).innerHTML = player.name;
   playerSection.style.display = "block";
 }
 
