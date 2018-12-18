@@ -12,65 +12,68 @@
 
 <body>
   <h1>lets play pig dice</h1>
-  <h3>player details</h3>
   <div class="container">
-    <input id="txtNewPlayer" type="text">
-    <button class="button" onclick="add(2)">add</button>
-    <button class="button" onclick="clearPlayers()">clear all players</button>
-
-    <button class="button" onclick="start">start</button>
-
-    <div class="player1">
-      <div id="playerName1"></div>
-
-      <div class="score">
-        <span class="lblTotal">Total</span>
-
-        <div id="totalScore">0
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-md-3">
+          <button type="button" id="Rules">Game Rules</button>
+          <p>
+           This game is played with maximum of two people.
+           The person who scores more points is the one who wins.
+           When you click on roll the marks calclates automaticaly and adds up in the total score.
+           If you click hold the next player takes the game and plays.
+          </p>
         </div>
-        <div id="playersControls1">
-          <div id="currentScore1" class="currentScore">0</div>
 
-          <button class="button playButton" onclick="roll(1)">Roll</button>
-          <button class="button playButton" onclick="hold()">hold</button>
-        </div>
-        <div class="player2">
-          <div id="playerName2"> </div>
-          <div class="score">
-            <span class="lblTotal">Total</span>
+      </div>
+      <h3>player details</h3>
+      <div class="jumbotron">
 
-            <div id="totalScore">0</div>
-          </div>
-          <div id="playercontrols2">
-            <div id="currentScore2" class="currentScore">0</div>
+      </div>
+      <input id="txtNewPlayer" type="text">
+      <button class="button" onclick="add(2)">add</button>
+      <button class="button" onclick="clearPlayers()">clear all players</button>
 
-          </div>
-          <button class="button playButton" onclick="roll(2)">roll</button>
-          <button class="button playButton" onclick="hold()">hold</button>
-        </div>
-        <div class="player3">
-          <div id="playerName3"></div>
+      <button class="button" onclick="start">start</button>
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-md-6">
 
-          <button class="button playButton" onclick="roll3">roll</button>
-          <button class="button playButton" onclick="hold3">hold</button>
-        </div>
-        <div class="player4">
-          <div id="playerName4"></div>
+            <div class="player1">
+              <div id="playerName1"></div>
 
-          <div class="score">
-            <span class="lblTotal">Total</span>
-            <div id="totalScore">0</div>
+              <div class="score">
+                <span class="lblTotal">Total</span>
 
-          </div>
-          <div id="playerControls4">
-            <div id="currentScore4" class="currentScore">0</div>
+                <div id="totalScore">0
+                </div>
+                <div id="playersControls1">
+                  <div id="currentScore1" class="currentScore">0</div>
 
-            <button class="button playButton" onclick="roll4">roll</button>
-            <button class="button playButton" onclick="hold4">holds</button>
+                  <button class="button playButton" onclick="roll(1)">Roll</button>
+                  <button class="button playButton" onclick="hold(1)">hold</button>
+                </div>
+                <div class="player2">
+                  <div id="playerName2"> </div>
+                  <div class="score">
+                    <span class="lblTotal">Total</span>
+
+                    <div id="totalScore">0</div>
+                  </div>
+                  <div id="playercontrols2">
+                    <div id="currentScore2" class="currentScore">0</div>
+
+                  </div>
+                  <button class="button playButton" onclick="roll(2)">roll</button>
+                  <button class="button playButton" onclick="hold()">hold</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
   </div>
   <div id="dice">&#x2681;</div>
 
