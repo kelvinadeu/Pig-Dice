@@ -7,11 +7,6 @@ body {
 
 }
 
-header {
-  background: #eaeaed;
-  border-bottom: 0.25rem solid;
-}
-
 h1 {
   font-size: 4rem;
   text-align: center;
